@@ -1,0 +1,106 @@
+ 
+Print odd numbers in an array
+
+
+const numArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+ 
+const odd = numArray.filter((e) => {
+  if(e % 2 != 0) {
+    return e;
+  }
+})
+console.log(odd)
+
+
+
+Return all the prime numbers in an array
+
+ var isPrime = true;
+ function isPrimeFn(value) {
+   if(value === 1) {
+     isPrime = false;
+   }
+    for(let i = 2; i < value; i++) {
+       if(value % i == 0) {
+         isPrime = false;
+         break;
+       } else {
+         isPrime = true;
+       }
+    }
+ }
+ 
+ isPrimeFn(2);
+ 
+ if(isPrime) {
+   console.log('Prime');
+ } else {
+   console.log('Not Prime');
+ }
+ 
+
+
+Sum of all numbers in an array
+
+
+const numArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
+ 
+let sum = 0;
+for(let i=0; i < numArray.length; i++) {
+  sum = sum + numArray[i]
+}
+console.log(sum)
+
+
+
+Rotate an array by k times
+
+ const numArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
+ 
+ function map(data = []) {
+  let newArray = [];
+  for(let i = 0; i < data.length; i++) {
+     const sum = data[i] + 1;
+     newArray.push(sum)
+  }
+  return newArray;
+}
+ 
+console.log(map(numArray))
+
+Return all the palindromes in an array
+
+let arr =  ['foo', 'racecar', 'pineapple', 'porcupine', 'pineenip']
+
+let palindromeArr = []
+
+arr.forEach(word => {
+  if (isPalindrome(word)) {
+    palindromeArr.push(word)
+  }
+})
+
+console.log(palindromeArr)
+
+
+Convert all the strings to title caps in a string array
+
+function findMax(a, b, cb) {
+    if(a > b) {
+       cb('A is greater than b');
+    } else {
+       cb('B is greater than A');
+    }
+ }
+ 
+ findMax(10, 20, function (message){
+   console.log(message)
+ })
+
+
+
+
+
+
+
+
